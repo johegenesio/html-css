@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            width: 98vw;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellat delectus expedita perferendis eligendi labore provident reiciendis adipisci aperiam omnis necessitatibus iure ratione fugit saepe error nam. Cupiditate, voluptas adipisci!</p>
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ipad</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>02</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>08</td>
+                    <td>03</td>
+                    <td>05</td>
+                </tr>
+                <tr>
+                    <td>Iphone</td>
+                    <td>05</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>02</td>
+                </tr>
+                <tr>
+                    <td>MacBook</td>
+                    <td>05</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>06</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>09</td>
+                    <td>02</td>
+                    <td>04</td>
+                    <td>08</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
